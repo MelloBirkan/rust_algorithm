@@ -5,6 +5,7 @@ mod shapes_area;
 mod insertion_sort;
 mod palindrome;
 mod sum_of_squared_digits;
+mod is_happy_number;
 
 use recursive_factorial::fact;
 use sum_mean_input::sum_mean_input;
@@ -13,6 +14,7 @@ use shapes_area::{Shape, largest_shape};
 use insertion_sort::insertion_sort;
 use palindrome::is_palindrome;
 use sum_of_squared_digits::sum_of_Squared_digits;
+use crate::is_happy_number::is_happy_number;
 
 fn main() {
     let mut arr = [16, 3, 6, 8, 0, 10];
@@ -27,6 +29,6 @@ fn main() {
     // sum_mean_input();
     insertion_sort(&mut arr);
     println!("{:?}", arr);
-    println!("{}",is_palindrome(&String::from("amlfma")));
-    println!("{}", sum_of_Squared_digits(&mut 100f32));
+    println!("{}",is_palindrome(&String::from("amlma")));
+    println!("{}", is_happy_number(&100));
 }
