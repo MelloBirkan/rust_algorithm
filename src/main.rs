@@ -6,6 +6,7 @@ mod insertion_sort;
 mod palindrome;
 mod sum_of_squared_digits;
 mod is_happy_number;
+mod fibonacci;
 
 use recursive_factorial::fact;
 use sum_mean_input::sum_mean_input;
@@ -31,4 +32,5 @@ fn main() {
     println!("{:?}", arr);
     println!("{}",is_palindrome(&String::from("amlma")));
     println!("{}", is_happy_number(&100));
+
 }
