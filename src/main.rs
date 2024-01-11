@@ -7,6 +7,7 @@ mod palindrome;
 mod sum_of_squared_digits;
 mod is_happy_number;
 mod fibonacci;
+mod unique_pairs_count;
 
 use recursive_factorial::fact;
 use sum_mean_input::sum_mean_input;
@@ -16,6 +17,7 @@ use insertion_sort::insertion_sort;
 use palindrome::is_palindrome;
 use sum_of_squared_digits::sum_of_Squared_digits;
 use crate::is_happy_number::is_happy_number;
+use crate::unique_pairs_count::unique_pairs_count;
 
 fn main() {
     let mut arr = [16, 3, 6, 8, 0, 10];
