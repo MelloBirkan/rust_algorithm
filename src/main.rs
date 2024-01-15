@@ -8,6 +8,9 @@ mod sum_of_squared_digits;
 mod is_happy_number;
 mod fibonacci;
 mod unique_pairs_count;
+mod maximum;
+mod reverse;
+mod isogram;
 
 use recursive_factorial::fact;
 use sum_mean_input::sum_mean_input;
