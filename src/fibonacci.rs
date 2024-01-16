@@ -14,3 +14,20 @@ fn fibs(count: usize) -> Vec<u32> {
     }
     fib
 }
+
+fn fibs_iterative(count: usize) -> Vec<u32> {
+    let mut result = vec![];
+    let mut x = 1;
+    let mut y = 1;
+    let mut i = 0;
+
+    while i < count {
+        result.push(x);
+        let next = x + y;
+        x = y;
+        y = next;
+        i += 1;
+    }
+
+    result
+}
