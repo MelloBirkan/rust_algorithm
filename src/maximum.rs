@@ -8,3 +8,7 @@ pub fn maximum(_numbers: &[i64]) -> i64 {
     }
     max
 }
+
+fn maximum_or_zero(numbers: &[u32]) -> u32 {
+    *numbers.iter().max().unwrap_or(&0)
+}
